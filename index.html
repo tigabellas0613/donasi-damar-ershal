@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Donasi untuk Damar & Ershal</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Segoe UI, sans-serif;
+}
+
+body{
+    min-height:100vh;
+    background:linear-gradient(-45deg,#ff6b6b,#ffa726,#ffd54f,#66bb6a,#42a5f5);
+    background-size:400% 400%;
+    animation:gradient 10s ease infinite;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:20px;
+}
+
+@keyframes gradient{
+    0%{background-position:0% 50%;}
+    50%{background-position:100% 50%;}
+    100%{background-position:0% 50%;}
+}
+
+.card{
+    max-width:850px;
+    width:100%;
+    background:rgba(255,255,255,0.96);
+    border-radius:25px;
+    padding:40px;
+    text-align:center;
+    box-shadow:0 15px 40px rgba(0,0,0,0.25);
+    position:relative;
+    overflow:hidden;
+}
+
+.trophy{
+    font-size:90px;
+    animation:bounce 2s infinite;
+}
+
+@keyframes bounce{
+    50%{
+        transform:translateY(-10px);
+    }
+}
+
+h1{
+    color:#ff6600;
+    font-size:42px;
+    margin:10px 0;
+}
+
+.badge{
+    display:inline-block;
+    background:gold;
+    color:#333;
+    padding:10px 20px;
+    border-radius:50px;
+    font-weight:bold;
+    margin-bottom:20px;
+}
+
+.subtitle{
+    font-size:22px;
+    color:#444;
+    margin-bottom:20px;
+}
+
+.desc{
+    color:#666;
+    line-height:1.8;
+    margin-bottom:30px;
+}
+
+.highlight{
+    color:#ff5722;
+    font-weight:bold;
+}
+
+.donation-box{
+    background:#fff8e1;
+    border-radius:20px;
+    padding:25px;
+    margin-bottom:25px;
+}
+
+.amount{
+    font-size:40px;
+    color:#00a651;
+    font-weight:bold;
+}
+
+.progress{
+    width:100%;
+    height:20px;
+    background:#ddd;
+    border-radius:50px;
+    overflow:hidden;
+    margin-top:15px;
+}
+
+.progress-bar{
+    width:75%;
+    height:100%;
+    background:linear-gradient(to right,#00c853,#69f0ae);
+}
+
+.bank-card{
+    margin-top:25px;
+    background:linear-gradient(135deg,#1565c0,#42a5f5);
+    color:white;
+    border-radius:20px;
+    padding:25px;
+}
+
+.bank-title{
+    font-size:24px;
+    font-weight:bold;
+    margin-bottom:15px;
+}
+
+.rekening{
+    font-size:32px;
+    font-weight:bold;
+    letter-spacing:3px;
+    margin:15px 0;
+}
+
+.copy-btn{
+    background:white;
+    color:#1565c0;
+    border:none;
+    padding:12px 24px;
+    border-radius:30px;
+    cursor:pointer;
+    font-weight:bold;
+    margin-top:10px;
+}
+
+.copy-btn:hover{
+    opacity:0.9;
+}
+
+.thanks{
+    margin-top:30px;
+    padding:25px;
+    background:#f5f5f5;
+    border-radius:20px;
+}
+
+.thanks h2{
+    color:#ff5722;
+    margin-bottom:10px;
+}
+
+footer{
+    margin-top:20px;
+    color:#777;
+}
+
+.confetti{
+    position:absolute;
+    font-size:28px;
+    animation:fall 5s linear infinite;
+}
+
+.confetti:nth-child(1){left:10%;animation-delay:0s;}
+.confetti:nth-child(2){left:30%;animation-delay:1s;}
+.confetti:nth-child(3){left:50%;animation-delay:2s;}
+.confetti:nth-child(4){left:70%;animation-delay:3s;}
+.confetti:nth-child(5){left:90%;animation-delay:4s;}
+
+@keyframes fall{
+    from{
+        transform:translateY(-100px) rotate(0deg);
+    }
+    to{
+        transform:translateY(800px) rotate(360deg);
+    }
+}
+</style>
+
+</head>
+<body>
+
+<div class="card">
+
+<div class="confetti">🎉</div>
+<div class="confetti">🎊</div>
+<div class="confetti">✨</div>
+<div class="confetti">⭐</div>
+<div class="confetti">🎈</div>
+
+<div class="trophy">🏆</div>
+
+<div class="badge">
+JUARA 1 LOMBA MAKAN
+</div>
+
+<h1>Donasi untuk Damar & Ershal</h1>
+
+<p class="subtitle">
+🎉 Sang Juara Lomba Makan 🎉
+</p>
+
+<p class="desc">
+Mari berikan apresiasi dan dukungan terbaik kepada
+<span class="highlight">Damar</span> dan
+<span class="highlight">Ershal</span>
+atas keberhasilan mereka meraih gelar
+<b>Juara 1 Lomba Makan</b>.
+Setiap donasi yang diberikan akan menjadi bentuk penghargaan dan semangat untuk terus berprestasi.
+</p>
+
+<div class="donation-box">
+    <h3>Total Donasi Terkumpul</h3>
+    <div class="amount">Rp 7.500.000</div>
+
+    <div class="progress">
+        <div class="progress-bar"></div>
+    </div>
+
+    <p style="margin-top:10px;">
+        Target Donasi: Rp 10.000.000
+    </p>
+</div>
+
+<div class="bank-card">
+    <div class="bank-title">🏦 Transfer Donasi via BCA</div>
+
+    <p>Bank Central Asia (BCA)</p>
+
+    <div class="rekening">
+        1234567890
+    </div>
+
+    <p>a.n. DAUD</p>
+
+    <button class="copy-btn"
+    onclick="navigator.clipboard.writeText('1940335449');alert('Nomor rekening berhasil disalin!');">
+        📋 Salin Nomor Rekening
+    </button>
+</div>
+
+<div class="thanks">
+    <h2>❤️ Terima Kasih Donatur ❤️</h2>
+
+    <p>
+        Kami mengucapkan terima kasih yang sebesar-besarnya kepada seluruh
+        donatur yang telah memberikan dukungan dan kontribusinya.
+        Kebaikan Anda sangat berarti bagi Damar dan Ershal.
+        Semoga segala kebaikan yang telah diberikan mendapatkan balasan yang
+        berlipat ganda, kesehatan, kebahagiaan, dan keberkahan.
+    </p>
+</div>
+
+<footer>
+    🎊 Terima kasih telah mendukung Damar & Ershal 🎊
+</footer>
+
+</div>
+
+</body>
+</html>
